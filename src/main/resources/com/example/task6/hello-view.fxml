@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.task6.HelloController">
+    <children>
+        <Canvas fx:id="myCanvas" height="279.0" layoutX="1.0" layoutY="214.0" onMouseClicked="#OnMouseClickCanvas" width="445.0" />
+        <ListView fx:id="listViewShape" layoutX="14.0" layoutY="32.0" prefHeight="182.0" prefWidth="142.0" />
+        <Label layoutX="302.0" layoutY="14.0" text="Выберите цвет фигуры:" />
+        <ColorPicker fx:id="colorPickerShape" layoutX="304.0" layoutY="31.0">
+            <value>
+                <Color red="0.20000000298023224" blue="1.0" />
+            </value></ColorPicker>
+        <Label layoutX="304.0" layoutY="69.0" text="Выберите цвет контура:" />
+        <ColorPicker fx:id="colorPickerStroke" layoutX="304.0" layoutY="86.0" prefHeight="25.0" prefWidth="125.0">
+            <value>
+                <Color red="1.0" />
+            </value></ColorPicker>
+        <Label layoutX="297.0" layoutY="123.0" text="Введите толщину контура:" />
+        <TextField fx:id="tFStrokeWidth" layoutX="304.0" layoutY="140.0" prefHeight="25.0" prefWidth="125.0" />
+        <Button fx:id="btnClear" layoutX="304.0" layoutY="177.0" mnemonicParsing="false" onAction="#OnBtnClear" prefHeight="37.0" prefWidth="125.0" text="ОЧИСТИТЬ" />
+
+    </children>
+</VBox>
